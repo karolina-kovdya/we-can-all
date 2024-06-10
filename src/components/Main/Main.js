@@ -1,9 +1,9 @@
-import './Main.css';
+import Note from '../Note/Note';
 
 function Main () {
     return (
-        <main >
-
+        <main className='main'>
+          <Note />
         </main>
     )
 }
