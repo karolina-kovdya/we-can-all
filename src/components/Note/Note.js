@@ -3,7 +3,7 @@ import img from '../../images/doctor.png'
 
 function Note() {
   return (
-    <div className='note'>
+    <section className='note'>
       <div className='note__container'>
         <p className='note__info'>
           Сайт создан с целью информирования и поддержки пациентов с диагнозом плоскоклеточный рак анального канала, анального края,
@@ -27,7 +27,7 @@ function Note() {
           Определение диагноза и методик лечения остаётся прерогативой Вашего лечащего врача.
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 
