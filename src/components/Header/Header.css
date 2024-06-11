@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #52c0ae;
-    /* background-color: #00C8C9; */
+    /* background-color: #52c0ae; */
+    background-color: #00C8C9;
 }
 
 .header__info {

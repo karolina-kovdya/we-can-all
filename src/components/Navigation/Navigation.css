@@ -1,0 +1,27 @@
+.navigation {
+    max-width: 100%;
+    padding: 40px 70px;
+}
+
+.navigation__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navigation__link {
+    font-size: 18px;
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    color: #434B4D;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.navigation__link:hover {
+    color: #00C8C9;
+}
