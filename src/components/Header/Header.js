@@ -1,5 +1,6 @@
 import './Header.css';
-import icon from '../../images/logo_telegram_airplane_air_plane_paper_airplane_icon_143169.png'
+import icon from '../../images/tg.png';
+import logo from '../../images/logo.png';
 
 function Header () {
     return (
@@ -19,7 +20,11 @@ function Header () {
                 />
               </a>
             </div>
-            <div className='header__logo'>LO<br></br>GO</div>
+            <img 
+              className='header__logo'
+              alt='логотип'
+              src={logo}
+            />
         </header>
     )
 }
