@@ -6,7 +6,7 @@ function Navigation () {
         <section className='navigation'>
           <ul className='navigation__list'>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка1</Link>
+              <Link to="/tab1" className="navigation__link">Вкладка1</Link>
             </li>
             <li className="navigation__links">
               <Link to="/" className="navigation__link" >Вкладка2</Link>

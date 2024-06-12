@@ -1,16 +1,24 @@
 import './Note.css';
-import img from '../../images/doctor.png'
+import img from '../../images/doctor.png';
+import qr from '../../images/qr.png'
 
 function Note() {
   return (
     <section className='note'>
       <div className='note__container'>
         <div className='note__block'>
-          <p className='note__info'>
-            Сайт создан с целью информирования и поддержки пациентов с диагнозом плоскоклеточный рак анального канала, анального края,
-            перианальной кожи C 21 C 44.5 по МКБ при поддержке Telegram сообщества пациентов
-            <span className='note__info-called'>«Мы можем все»</span>
-          </p>
+          <div className='note__information'>
+            <p className='note__info'>
+              Сайт создан с целью информирования и поддержки пациентов с диагнозом плоскоклеточный рак анального канала, анального края,
+              перианальной кожи C 21 C 44.5 по МКБ при поддержке Telegram сообщества пациентов
+              <a className='note__link'
+                href='https://t.me/+zpdVmwyIunhmOGMy'
+                target='blanc'>
+                «Мы можем все»
+              </a>
+            </p>
+            <img className='note__qr' alt='qr-code' src={qr} />
+          </div>
         </div>
         <div className='note__cards'>
           <div className='note__card'>
