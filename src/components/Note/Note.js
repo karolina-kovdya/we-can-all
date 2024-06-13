@@ -16,6 +16,7 @@ function Note() {
                 target='blanc'>
                 «Мы можем все»
               </a>
+              и врачей:
             </p>
             <img className='note__qr' alt='qr-code' src={qr} />
           </div>
@@ -30,7 +31,7 @@ function Note() {
             <p className='note__card-name'>Расулова</p>
           </div>
         </div>
-        <div className='note__block'>
+        <div className='note__block note__block_note'>
           <p className='note__info'>
             Информация, размещённая на сайте, а также мнение специалиста носит исключительно ознакомительно-справочный характер
             и не является медицинской услугой и медицинской помощью по смыслу Федерального закона от 21.11.2011 N 323-ФЗ
