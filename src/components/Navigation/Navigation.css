@@ -12,7 +12,7 @@
 }
 
 .navigation__link {
-    font-size: 18px;
+    font-size: 17px;
     margin: 0;
     font-family: "Inter";
     font-style: normal;
@@ -21,8 +21,11 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: color .2s;
+    border-bottom: 1px solid #ced0d1;
+    transition: border-bottom .2s;
 }
 
 .navigation__link:hover {
     color: #00C8C9;
+    border-bottom: 1px solid #00C8C9;
 }

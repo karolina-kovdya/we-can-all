@@ -26,7 +26,7 @@
     width: calc(100% - 30px);
     position: absolute;
     left: 15px;
-    background: #e4e8e8;
+    background: #d6dada;
 }
 
 .note__block_note::before {
@@ -74,7 +74,7 @@
 }
 
 .note__cards {
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     display: flex;
     flex-direction: column;
 }
@@ -85,14 +85,27 @@
 }
 
 .note__img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
 }
 
 .note__card-name {
+    margin: 0;
     font-size: 16px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     color: #434B4D;
+}
+
+.note__card-info {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    text-align: justify;
 }
