@@ -1,5 +1,4 @@
 import './Footer.css';
-import icon from '../../images/tg.png'
 
 function Footer() {
     return (
