@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Tab1 from '../Tab1/Tab1';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           element={<Tab1 />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }
