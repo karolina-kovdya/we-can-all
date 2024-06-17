@@ -25,7 +25,9 @@ function Note() {
           <div className='note__card'>
             <img className='note__img' src={img} alt='фотография Романова'></img>
             <div className='note__doctors'>
-              <p className='note__card-name'>Романов Денис Сергеевич</p>
+              <a className='note__doctors-link' href='https://prodoctorov.ru/moskva/vrach/365669-romanov' target='blanc'>
+              Романов Денис Сергеевич
+              </a>
               <p className='note__card-info'>
                 - врач-онколог, заместитель Генерального директора федеральной сети клиник экспертной онкологии «Евроонко» по научной деятельности;<br></br>
                 - врач-радиотерапевт, заведующий радиотерапевтическим отделением ЧУЗ «ЦКБ «РЖД-Медицина»;<br></br>
@@ -35,7 +37,9 @@ function Note() {
           </div>
           <div className='note__card'>
             <img className='note__img' src={img} alt='фотография Расулова'></img>
-            <p className='note__card-name'>Расулова</p>
+            <a className='note__doctors-link' href='#' target='blanc'>
+              Расулов
+              </a>
           </div>
         </div>
         <div className='note__block note__block_note'>
