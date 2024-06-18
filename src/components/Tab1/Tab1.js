@@ -10,7 +10,7 @@ function Tab1 () {
         <section className='tab1'>
           <Link to='/' className='tab1__link' >Главная</Link>
           <Information
-            sibtitle='Плоскоклеточный рак анального канала,анального края, перианальной кожи'
+            title='Что почитать?'
           >
             <p className='tab1__info-title'>Информация для ознакомления:</p>
             <p className='tab1__info'>- Клинические рекомендации</p>

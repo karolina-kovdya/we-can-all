@@ -5,8 +5,7 @@ function Information (props) {
         <div className='information'>
           <div className='information__container'>
             <div className='information__heading'>
-              <h1 className='information__title'>Диагноз:</h1>
-              <h2 className='information__sibtitle'>{props.sibtitle}</h2>
+              <h1 className='information__title'>{props.title}</h1>
             </div>
              {props.children}
           </div>

@@ -12,7 +12,7 @@ function Navigation () {
               <Link to="/" className="navigation__link" >Вкладка2</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка3</Link>
+              <Link to="/tab3" className="navigation__link" >Вкладка3</Link>
             </li>
             <li className="navigation__links">
               <Link to="/" className="navigation__link" >Вкладка4</Link>
