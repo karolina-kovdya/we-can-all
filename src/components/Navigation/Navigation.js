@@ -6,28 +6,28 @@ function Navigation () {
         <section className='navigation'>
           <ul className='navigation__list'>
             <li className="navigation__links">
-              <Link to="/tab1" className="navigation__link">Вкладка1</Link>
+              <Link to="/tab1" className="navigation__link">Рекомендации</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка2</Link>
+              <Link to="/" className="navigation__link" >О диагнозе</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/tab3" className="navigation__link" >Вкладка3</Link>
+              <Link to="/tab3" className="navigation__link" >Обследования</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка4</Link>
+              <Link to="/" className="navigation__link" >ХЛТ лечение</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка5</Link>
+              <Link to="/" className="navigation__link" >Транспозиция яичников</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка6</Link>
+              <Link to="/" className="navigation__link" >После ХЛТ</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка7</Link>
+              <Link to="/" className="navigation__link" >Хирургия</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >Вкладка8</Link>
+              <Link to="/" className="navigation__link" >Клиники и ФЦ</Link>
             </li>
           </ul>
         </section>
