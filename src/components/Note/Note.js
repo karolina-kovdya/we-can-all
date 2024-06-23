@@ -1,6 +1,7 @@
 import './Note.css';
 import img from '../../images/doctor.png';
-import qr from '../../images/qr.png'
+import qr from '../../images/qr.png';
+import romanov from '../../images/DSC09199.jpg';
 
 function Note() {
   return (
@@ -23,7 +24,7 @@ function Note() {
         </div>
         <div className='note__cards'>
           <div className='note__card'>
-            <img className='note__img' src={img} alt='фотография Романова'></img>
+            <img className='note__img' src={romanov} alt='фотография Романова'></img>
             <div className='note__doctors'>
               <a className='note__doctors-link' href='https://prodoctorov.ru/moskva/vrach/365669-romanov' target='blanc'>
               Романов Денис Сергеевич
