@@ -1,0 +1,130 @@
+.tab6 {
+    max-width: 100%;
+    padding: 40px 70px;
+}
+
+.tab6__link {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    text-decoration: none;
+    transition: color .2s;
+    border-bottom: 1px solid #ced0d1;
+    transition: border-bottom .2s;
+}
+
+.tab6_link:hover {
+    color: #00C8C9;
+    border-bottom: 1px solid #00C8C9;
+}
+
+.tab6__info-title {
+    margin: 30px 0 40px 0;
+    font-size: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    text-align: center;
+}
+
+.tab6___table {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.tab6__table-cellTitle {
+    height: 20px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    font-size: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    text-align: center;
+}
+
+.tab6__table-cellTitle:last-child {
+    border-right: none;
+}
+
+.tab6__tableCell {
+    height: 35px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+}
+
+.tab6__tableCell:last-child {
+    border-right: none;
+}
+
+.tab6__tableCell-speq {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #00C8C9;
+}
+
+.tab6__tableCell_last {
+    border-bottom: none;
+}
+
+.tab6__block {
+    margin-top: 30px;
+}
+
+.tab6__note {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #00C8C9;
+    line-height: 1.7;
+}
+
+.tab6__block-note {
+    position: relative;
+    border-left: 5px solid #00C8C9;
+    padding: 15px;
+}
+
+.tab6__block-note::before, .tab6__block-note::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    background: #d6dada;
+}
+
+.tab6__block-note::before {
+    top: 0;
+}
+
+.tab6__block-note::after {
+    bottom: 0;
+}
+
+.tab6__block-note {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    line-height: 1.7;
+    text-align: justify;
+}

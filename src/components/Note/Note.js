@@ -40,7 +40,7 @@ function Note() {
             <img className='note__img' src={img} alt='фотография Расулова'></img>
             <a className='note__doctors-link' href='#' target='blanc'>
               Расулов
-              </a>
+            </a>
           </div>
         </div>
         <div className='note__block note__block_note'>

@@ -21,7 +21,7 @@ function Navigation () {
               <Link to="/" className="navigation__link" >Транспозиция яичников</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >После ХЛТ</Link>
+              <Link to="/tab6" className="navigation__link" >После ХЛТ</Link>
             </li>
             <li className="navigation__links">
               <Link to="/" className="navigation__link" >Хирургия</Link>
