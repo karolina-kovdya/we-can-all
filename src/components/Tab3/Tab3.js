@@ -1,11 +1,9 @@
 import './Tab3.css';
 import Information from '../Information/Information';
-import { Link } from 'react-router-dom';
 
 function Tab3() {
     return (
         <section className='tab3'>
-            <Link to='/' className='tab3__link' >Главная</Link>
             <Information
                 title='Обследования'
             >

@@ -1,11 +1,9 @@
 import './Tab6.css';
-import { Link } from 'react-router-dom';
 import Information from '../Information/Information';
 
 function Tab6() {
     return (
         <section className='tab6'>
-            <Link to='/' className='tab6__link' >Главная</Link>
             <Information
                 title='Наблюдение после ХЛТ'
             >

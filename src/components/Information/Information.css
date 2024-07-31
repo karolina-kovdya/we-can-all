@@ -1,8 +1,10 @@
 .information {
     max-width: 100%;
-    margin: 40px 70px;
+    margin: 0 70px 40px 70px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -14,7 +16,25 @@
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+.information__link {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    color: #434B4D;
+    text-decoration: none;
+    transition: color .2s;
+    border-bottom: 1px solid #ced0d1;
+    transition: border-bottom .2s;
+}
+
+.information__link:hover {
+    color: #00C8C9;
+    border-bottom: 1px solid #00C8C9;
+}
+
 .information__heading {
+    margin-top: 30px;
     position: relative;
     display: flex;
     flex-direction: column;

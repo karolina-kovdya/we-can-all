@@ -1,5 +1,4 @@
 import './Tab1.css';
-import { Link } from 'react-router-dom';
 import Information from '../Information/Information';
 import file1 from '../../files/ClinikC21.pdf';
 import file2 from '../../files/PrC21.pdf';
@@ -8,7 +7,6 @@ import file3 from '../../files/RC21.pdf';
 function Tab1() {
   return (
     <section className='tab1'>
-      <Link to='/' className='tab1__link' >Главная</Link>
       <Information
         title='Что почитать?'
       >

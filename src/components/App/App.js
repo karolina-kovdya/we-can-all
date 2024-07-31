@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
+import Navgation from '../Navigation/Navigation';
 import Main from '../Main/Main';
 import Tab1 from '../Tab1/Tab1';
 import Tab3 from '../Tab3/Tab3';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Navgation />
       <Routes >
         <Route 
           path='/'

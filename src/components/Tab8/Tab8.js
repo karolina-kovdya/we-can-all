@@ -1,11 +1,9 @@
 import './Tab8.css';
-import { Link } from 'react-router-dom';
 import Information from '../Information/Information';
 
 function Tab8 () {
     return (
         <section className='tab8'>
-          <Link to='/' className='tab8__link' >Главная</Link>
           <Information
             title='Крупнейшие клиники и ФЦ ЦО РФ'
           >
