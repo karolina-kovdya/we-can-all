@@ -53,3 +53,9 @@
     height: 80px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1270px) {
+    .header {
+        padding: 0 40px;
+    }
+}

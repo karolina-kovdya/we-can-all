@@ -12,7 +12,7 @@
 }
 
 .navigation__link {
-    font-size: 17px;
+    font-size: 15px;
     margin: 0;
     font-family: "Inter";
     font-style: normal;
@@ -28,4 +28,20 @@
 .navigation__link:hover {
     color: #00C8C9;
     border-bottom: 1px solid #00C8C9;
+}
+
+@media screen and (max-width: 1270px) {
+   .navigation {
+    padding: 30px 40px;
+   }
+
+    .navigation__link {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .navigation {
+        display: none;
+    }
 }
