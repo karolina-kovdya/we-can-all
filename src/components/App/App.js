@@ -26,6 +26,14 @@ function App() {
   //   return () => window.removeEventListener("keydown", closePopupWithEsc);
   // });
 
+  useEffect(() => {
+    if (isBurgerOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  })
+
   function handleBurgerOpen () {
     setIsBurgerOpen(!isBurgerOpen)
   }
