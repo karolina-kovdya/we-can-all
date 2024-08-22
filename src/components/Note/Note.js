@@ -1,7 +1,7 @@
 import './Note.css';
-import img from '../../images/doctor.png';
 import qr from '../../images/qr.png';
 import romanov from '../../images/DSC09199.jpg';
+import rasulov from '../../images/rasulov.jpg';
 
 function Note() {
   return (
@@ -27,7 +27,7 @@ function Note() {
             <img className='note__img' src={romanov} alt='фотография Романова'></img>
             <div className='note__doctors'>
               <a className='note__doctors-link' href='https://prodoctorov.ru/moskva/vrach/365669-romanov' target='blanc'>
-              Романов Денис Сергеевич
+                Романов Денис Сергеевич
               </a>
               <p className='note__card-info'>
                 - врач-онколог, заместитель Генерального директора федеральной сети клиник экспертной онкологии «Евроонко» по научной деятельности;<br></br>
@@ -37,10 +37,18 @@ function Note() {
             </div>
           </div>
           <div className='note__card'>
-            <img className='note__img' src={img} alt='фотография Расулова'></img>
-            <a className='note__doctors-link' href='#' target='blanc'>
-              Расулов
-            </a>
+            <img className='note__img' src={rasulov} alt='фотография Расулова'></img>
+            <div className='note__doctors'>
+              <a className='note__doctors-link' href='https://prodoctorov.ru/odincovo/vrach/358448-rasulov' target='blanc'>
+                Расулов Арсен Османович
+              </a>
+              <p className='note__card-info'>
+                - врач-колопроктолог;<br></br>
+                - врач-онколог;<br></br>
+                - доктор медицинских наук;<br></br>
+                - заведующий отделением онкоколопроктологии КГ «Лапино - 2» г. Москва
+              </p>
+            </div>
           </div>
         </div>
         <div className='note__block note__block_note'>
