@@ -26,7 +26,6 @@
 
 .header__info-web {
     display: flex;
-    margin-top: 10px;
 }
 
 .header__info-name {
@@ -67,8 +66,15 @@
 }
 
 @media screen and (max-width: 780px) {
+    .header {
+        padding: 5px 20px 5px 40px;
+    }
     .header__info {
         flex-direction: column;
+    }
+
+    .header__info-web {
+        margin-top: 10px;
     }
 
     .header__info-text {
@@ -76,7 +82,22 @@
     }
 
     .header__info-name {
+        margin-left: 0;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .header {
+        padding: 5px 0 5px 20px;
+    }
+    
+    .header__info-text {
+        font-size: 14px;
+    }
+
+    .header__info-name {
+        font-size: 14px;
     }
 }
 

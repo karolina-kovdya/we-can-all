@@ -1,6 +1,7 @@
 .note {
     max-width: 100%;
-    margin: 20px 70px 60px 70px;
+    margin: 20px 0 60px 0;
+    padding: 0 70px;
     display: flex;
     justify-content: center;
 }
@@ -50,7 +51,7 @@
     font-weight: 400;
     color: #434B4D;
     line-height: 1.7;
-    text-align: justify;
+    text-align: left;
 }
 
 .note__link {
@@ -108,17 +109,90 @@
 
 .note__card-info {
     margin: 5px 0 0 0;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.7;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     color: #434B4D;
-    text-align: justify;
+    text-align: left;
 }
 
 @media screen and (max-width: 990px) {
     .note {
         margin-top: 0px;
+    }
+
+    .note__cards {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .note {
+        padding: 0 40px;
+    }
+
+    .note__cards {
+        margin-top: 50px;
+    }
+
+    .note__card {
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .note {
+        padding: 0 20px;
+    }
+    
+    .note__container {
+        padding: 20px;
+    }
+
+    .note__information {
+        flex-direction: column-reverse;
+    }
+
+    .note__qr {
+        margin-left: 0;
+        margin-bottom: 20px;
+        align-self: flex-end;
+        width: 80px;
+        height: 80px;
+    }
+
+    .note__cards {
+        margin-top: 35px;
+    }
+
+    .note__card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note__card_down {
+        margin: 60px 0;
+    }
+
+    .note__img {
+        width: 180px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .note__doctors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note__doctors-link {
+        margin: 20px 0;
+    }
+
+    .note__card-info {
+        margin-top: 0;
     }
 }

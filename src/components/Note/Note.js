@@ -36,7 +36,7 @@ function Note() {
               </p>
             </div>
           </div>
-          <div className='note__card'>
+          <div className='note__card note__card_down'>
             <img className='note__img' src={rasulov} alt='фотография Расулова'></img>
             <div className='note__doctors'>
               <a className='note__doctors-link' href='https://prodoctorov.ru/odincovo/vrach/358448-rasulov' target='blanc'>
