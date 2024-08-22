@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Navgation from '../Navigation/Navigation';
+import Menu from '../Menu/Menu';
 import Burger from '../Burger/Burger';
 import Main from '../Main/Main';
 import Tab1 from '../Tab1/Tab1';
@@ -15,16 +16,15 @@ import { useEffect, useState } from 'react';
 function App() {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
-  useEffect (() => {
-    const closePopupWithEsc = (e) => {
-      if (e.key = 'Escape') {
-        closeBurgerMenu()
-      }
-    };
-    window.addEventListener('keydown', closePopupWithEsc);
-    
-    return () => window.removeEventListener('keydown', closePopupWithEsc);
-  })
+  // useEffect(() => {
+  //   const closePopupWithEsc = (e) => {
+  //     if (e.key === "Escape") {
+  //       closeBurgerMenu();
+  //     }
+  //   };
+  //   window.addEventListener("keydown", closePopupWithEsc);
+  //   return () => window.removeEventListener("keydown", closePopupWithEsc);
+  // });
 
   function handleBurgerOpen () {
     setIsBurgerOpen(!isBurgerOpen)
@@ -39,6 +39,7 @@ function App() {
       <Burger isOpen={isBurgerOpen} onClose={closeBurgerMenu} />
       <Header />
       <Navgation />
+      <Menu isOpen={isBurgerOpen} onBurger={handleBurgerOpen}/>
       <Routes >
         <Route 
           path='/'

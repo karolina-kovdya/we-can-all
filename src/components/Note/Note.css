@@ -1,6 +1,6 @@
 .note {
     max-width: 100%;
-    margin: 20px 70px;
+    margin: 20px 70px 60px 70px;
     display: flex;
     justify-content: center;
 }
@@ -115,4 +115,10 @@
     font-weight: 400;
     color: #434B4D;
     text-align: justify;
+}
+
+@media screen and (max-width: 990px) {
+    .note {
+        margin-top: 0px;
+    }
 }

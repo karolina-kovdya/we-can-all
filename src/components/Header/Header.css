@@ -8,6 +8,7 @@
     align-items: center;
     /* background-color: #52c0ae; */
     background-color: #00C8C9;
+    z-index: 2;
 }
 
 .header__info {
@@ -21,6 +22,11 @@
     font-style: normal;
     font-weight: 500;
     color: #fff;
+}
+
+.header__info-web {
+    display: flex;
+    margin-top: 10px;
 }
 
 .header__info-name {
@@ -59,3 +65,18 @@
         padding: 0 40px;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .header__info {
+        flex-direction: column;
+    }
+
+    .header__info-text {
+        font-size: 15px;
+    }
+
+    .header__info-name {
+        font-size: 15px;
+    }
+}
+
