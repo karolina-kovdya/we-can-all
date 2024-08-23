@@ -1,6 +1,7 @@
 .tab7 {
     max-width: 100%;
-    padding: 40px 70px;
+    display: flex;
+    align-items: center;
 }
 
 .tab7__link {
@@ -127,4 +128,43 @@
     color: #434B4D;
     line-height: 1.7;
     text-align: justify;
+}
+
+@media screen and (max-width: 780px) {
+    .tab7 {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .tab7__info-title {
+        font-size: 16px;
+    }
+
+    .tab7__table-cellTitle {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .tab7__tableCell {
+        font-size: 11px;
+    }
+
+    .tab7__note {
+        font-size: 13px;
+    }
+
+    .tab7__block-note {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .tab7 {
+        padding: 0 20px;
+    }
+
+    .tab7__tableCell {
+        font-size: 10px;
+    }
 }

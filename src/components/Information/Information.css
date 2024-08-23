@@ -84,3 +84,15 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 580px) {
+    .information__title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .information__container {
+        padding: 15px;
+    }
+}
