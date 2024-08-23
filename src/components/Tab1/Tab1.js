@@ -43,7 +43,7 @@ function Tab1() {
             </a>
           </li>
           <li className='tab1__list-point'>
-            <p className='tab1__info'>- ФЗ №323-ФЗ от 21.11.2011 «Об основах охраны здоровья граждан в РФ»</p>
+            <p className='tab1__info'>- ФЗ №323-ФЗ от 21.11.2011<br></br> «Об основах охраны здоровья граждан в РФ»</p>
             <a
               className='tab1__file'
               href='https://minzdrav.gov.ru/documents/7025-federalnyy-zakon-323-fz-ot-21-noyabrya-2011-g'

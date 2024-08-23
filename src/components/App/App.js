@@ -29,6 +29,7 @@ function App() {
   useEffect(() => {
     if (isBurgerOpen) {
       document.body.style.overflow = 'hidden';
+      window.scrollTo(0,0);
     } else {
       document.body.style.overflow = 'unset';
     }

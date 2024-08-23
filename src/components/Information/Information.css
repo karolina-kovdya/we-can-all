@@ -1,15 +1,15 @@
 .information {
-    max-width: 100%;
-    margin: 0 70px 40px 70px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 70px 60px 70px;
 }
 
 
 .information__container {
-    width: 700px;
+    width: 900px;
     background-color: #fffffff2;
     padding: 30px;
     box-shadow: inset 0 -1em 3em rgba(0, 0, 0, 0.1),
@@ -57,4 +57,26 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1118px) {
+    .information__container {
+        width: calc(100% - 68px);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .information {
+        margin: 10px 35px 60px 35px;
+    }
+
+    .information__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .information {
+        margin: 10px 15px 60px 15px;
+    }
 }
