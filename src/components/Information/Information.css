@@ -79,4 +79,8 @@
     .information {
         margin: 10px 15px 60px 15px;
     }
+
+    .information__title {
+        text-align: center;
+    }
 }
