@@ -15,6 +15,16 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const [date, setDate] = useState('');
+
+  useEffect(() => {
+    fetch('/api')
+    .then(response => response.json())
+    .then(data => {
+      setDate(data);
+      console.log(data);
+    })
+  }, []);
 
   // useEffect(() => {
   //   const closePopupWithEsc = (e) => {
@@ -75,7 +85,7 @@ function App() {
           element={<Tab8 />}
         />
       </Routes>
-      <Footer />
+      <Footer data={date} />
     </div>
   );
 }
