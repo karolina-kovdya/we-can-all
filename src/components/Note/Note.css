@@ -118,6 +118,24 @@
     text-align: left;
 }
 
+.note__card-contacts {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.node__card-iconInst {
+    margin: 0 15px 0 0;
+    width:25px;
+    height: 25px;
+}
+
+.node__card-iconVk {
+    width: 35px;
+    height: 35px;
+}
+
 @media screen and (max-width: 990px) {
     .note {
         margin-top: 0px;
