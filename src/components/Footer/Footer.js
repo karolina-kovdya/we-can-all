@@ -1,6 +1,6 @@
 import './Footer.css';
 
-function Footer(props) {
+function Footer() {
     return (
         <footer className='footer'>
             <p className='footer__info'>«Мы можем все»</p>
