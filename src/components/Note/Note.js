@@ -17,7 +17,7 @@ function Note() {
               <a className='note__link'
                 href='https://t.me/+zpdVmwyIunhmOGMy'
                 target='blanc'
-                title='перейти в Telegram сообщество'>
+                title='вступить в Telegram сообщество'>
                 «Мы можем все»
               </a>
               и врачей:

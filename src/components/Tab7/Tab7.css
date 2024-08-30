@@ -127,7 +127,7 @@
     font-weight: 400;
     color: #434B4D;
     line-height: 1.7;
-    text-align: justify;
+    text-align: left;
 }
 
 @media screen and (max-width: 780px) {
@@ -166,5 +166,11 @@
 
     .tab7__tableCell {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .tab7 {
+        padding: 0 15px;
     }
 }

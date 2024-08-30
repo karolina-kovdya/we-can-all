@@ -53,6 +53,13 @@
     }
 }
 
+@media screen and (max-width:488px) {
+    .tab8 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .tab8__info {
        margin-top: 30px;

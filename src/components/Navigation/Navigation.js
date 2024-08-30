@@ -15,7 +15,7 @@ function Navigation () {
               <Link to="/tab3" className="navigation__link" >Обследования</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/" className="navigation__link" >ХЛТ</Link>
+              <Link to="/tab4" className="navigation__link" >ХЛТ</Link>
             </li>
             <li className="navigation__links">
               <Link to="/" className="navigation__link" >Транспозиция яичников</Link>

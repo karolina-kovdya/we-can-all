@@ -91,6 +91,13 @@
     }
 }
 
+@media screen and (max-width: 488px) {
+    .tab3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .tab3__info {
        margin-top: 30px;

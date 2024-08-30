@@ -7,6 +7,7 @@ import Burger from '../Burger/Burger';
 import Main from '../Main/Main';
 import Tab1 from '../Tab1/Tab1';
 import Tab3 from '../Tab3/Tab3';
+import Tab4 from '../Tab4/Tab4';
 import Tab6 from '../Tab6/Tab6';
 import Tab7 from '../Tab7/Tab7';
 import Tab8 from '../Tab8/Tab8';
@@ -61,6 +62,10 @@ function App() {
         <Route 
           path='/tab3'
           element={<Tab3 />}
+        />
+        <Route
+          path='/tab4'
+          element={<Tab4 />} 
         />
         <Route 
           path='/tab6'

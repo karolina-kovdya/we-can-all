@@ -5,7 +5,7 @@ function Tab8 () {
     return (
         <section className='tab8'>
           <Information
-            title='Крупнейшие клиники и ФЦ ЦО РФ'
+            title='Крупнейшие профильные клиники и ФЦ России'
           >
             <ul className='tab8__list'>
                 <li className='tab8__point'>
@@ -14,6 +14,14 @@ function Tab8 () {
                       target='blank'
                       href='https://www.ronc.ru/?ysclid=lx0853koi5137310027'>
                       Национальный медицинский исследовательский центр онкологии имени Н.Н. Блохина 
+                    </a>
+                </li>
+                <li className='tab8__point'>
+                    <a 
+                      className='tab8__info' 
+                      target='blank'
+                      href='https://lapino2.ru/?ysclid=lx0dch88tr322063450'>
+                      Онкологический центр Лапино
                     </a>
                 </li>
                 <li className='tab8__point'>
@@ -76,16 +84,32 @@ function Tab8 () {
                     <a 
                       className='tab8__info' 
                       target='blank'
-                      href='https://lapino2.ru/?ysclid=lx0dch88tr322063450'>
-                      Онкологический центр Лапино
+                      href='https://www.niioncologii.ru/'>
+                      НМИЦ онкологии им. Н.Н. Петрова
                     </a>
                 </li>
                 <li className='tab8__point'>
                     <a 
-                      className='tab8__link' 
+                      className='tab8__info' 
                       target='blank'
-                      href='https://www.niioncologii.ru/'>
-                      НМИЦ онкологии им. Н.Н. Петрова
+                      href='https://ldc.ru/'>
+                      МИБС Медицинский институт имени Березина Сергея
+                    </a>
+                </li>
+                <li className='tab8__point'>
+                    <a 
+                      className='tab8__info' 
+                      target='blank'
+                      href='https://oncocentre.ru/'>
+                      Онкологический центр имени Н.П. Напалкова
+                    </a>
+                </li>
+                <li className='tab8__point'>
+                    <a 
+                      className='tab8__info' 
+                      target='blank'
+                      href='https://rrcrst.ru/?ysclid=m0fav1lvja774580335'>
+                      Российский научный центр радиологии и хирургических технологий имени академика А.М. Гранова
                     </a>
                 </li>
             </ul>

@@ -1,0 +1,11 @@
+.tab4 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tab4__video {
+    margin-bottom: 30px;
+    width: 450px;
+    height: 250px;
+}

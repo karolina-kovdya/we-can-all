@@ -96,3 +96,9 @@
         padding: 15px;
     }
 }
+
+@media screen and (max-width: 372px) {
+    .information__container {
+        padding: 5px;
+    }
+}
