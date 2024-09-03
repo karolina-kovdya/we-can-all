@@ -17,15 +17,15 @@ import { useEffect, useState } from 'react';
 function App() {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
-  // useEffect(() => {
-  //   const closePopupWithEsc = (e) => {
-  //     if (e.key === "Escape") {
-  //       closeBurgerMenu();
-  //     }
-  //   };
-  //   window.addEventListener("keydown", closePopupWithEsc);
-  //   return () => window.removeEventListener("keydown", closePopupWithEsc);
-  // });
+  useEffect(() => {
+    const closePopupWithEsc = (e) => {
+      if (e.key === "Escape") {
+        closeBurgerMenu();
+      }
+    };
+    window.addEventListener("keydown", closePopupWithEsc);
+    return () => window.removeEventListener("keydown", closePopupWithEsc);
+  });
 
   useEffect(() => {
     if (isBurgerOpen) {
