@@ -24,7 +24,7 @@ function Navigation () {
               <Link to="/tab6" className="navigation__link" >После ХЛТ</Link>
             </li>
             <li className="navigation__links">
-              <Link to="/tab7" className="navigation__link" >После операции</Link>
+              <Link to="/tab7" className="navigation__link" >Хирургия</Link>
             </li>
             <li className="navigation__links">
               <Link to="/tab8" className="navigation__link" >Клиники и ФЦ</Link>

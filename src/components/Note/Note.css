@@ -138,6 +138,11 @@
     opacity: .7;
 }
 
+.note__video {
+    width: 250px;
+    height: 120px;
+}
+
 @media screen and (max-width: 990px) {
     .note {
         margin-top: 0px;

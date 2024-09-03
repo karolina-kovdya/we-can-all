@@ -4,6 +4,8 @@ import romanov from '../../images/DSC09199.jpg';
 import rasulov from '../../images/rasulov.jpg';
 import inst from '../../images/inst.png';
 import vk from '../../images/vk.png';
+// import rdvideo from '../../video/rdmain.mp4';
+// import ramain from '../../video/ramain.mp4';
 
 function Note() {
   return (
@@ -54,6 +56,7 @@ function Note() {
                     />
                   </a>
                 </div>
+                {/* <video className="note__video" src={ramain} controls /> */}
             </div>
           </div>
           <div className='note__card note__card_down'>
@@ -67,6 +70,7 @@ function Note() {
                 врач-радиотерапевт, заведующий радиотерапевтическим отделением ЧУЗ «ЦКБ «РЖД-Медицина»,
                 доцент кафедры онкологии и лучевой терапии МГМСУ им. А.И. Евдокимова
               </p>
+              {/* <video className="note__video" src={rdvideo} controls /> */}
             </div>
           </div>
         </div>

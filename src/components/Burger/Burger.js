@@ -28,7 +28,7 @@ function Burger(props) {
             <Link to="/tab6" className="burger__link" onClick={props.onClose}>После ХЛТ</Link>
           </li>
           <li className="burger__links">
-            <Link to="/tab7" className="burger__link" onClick={props.onClose}>После операции</Link>
+            <Link to="/tab7" className="burger__link" onClick={props.onClose}>Хирургия</Link>
           </li>
           <li className="burger__links">
             <Link to="/tab8" className="burger__link" onClick={props.onClose}>Клиники и ФЦ</Link>
