@@ -4,10 +4,25 @@ import romanov from '../../images/DSC09199.jpg';
 import rasulov from '../../images/rasulov.jpg';
 import inst from '../../images/inst.png';
 import vk from '../../images/vk.png';
-// import rdvideo from '../../video/rdmain.mp4';
-// import ramain from '../../video/ramain.mp4';
+import { useEffect, useState } from 'react';
+import rdvideo from '../../video/rdvmain.mp4';
+import ramain from '../../video/ravmain.mp4';
 
-function Note() {
+function Note(props) {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const resize = () => {
+      setTimeout(() => setWidth(window.innerWidth), 200);
+    };
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, [])
+
+  function handleClick() {
+    props.onOpen(ramain);
+  }
+
   return (
     <section className='note'>
       <div className='note__container'>
@@ -24,7 +39,7 @@ function Note() {
               </a>
               и врачей:
             </p>
-            <img className='note__qr' alt='qr-code' src={qr} title='сканировать QR-код для перехода в Telegram сообщество'/>
+            <img className='note__qr' alt='qr-code' src={qr} title='сканировать QR-код для перехода в Telegram сообщество' />
           </div>
         </div>
         <div className='note__cards'>
@@ -38,25 +53,28 @@ function Note() {
                 врач-колопроктолог,врач-онколог,доктор медицинских наук,
                 заведующий отделением онкоколопроктологии КГ «Лапино - 2» г. Москва
               </p>
-                <div className='note__card-contacts'>
-                  <a className='note__card-link' href='https://www.instagram.com/dr_arsen_rasulov?igsh=MTl3MDFpOHJuMGV0eg==' target='blanc'>
-                    <img 
-                      className='node__card-iconInst' 
-                      src={inst}
-                      alt='иконка инстаграм'
-                      title='посмотреть профиль в Instagram'
-                    />
-                  </a>
-                  <a className='note__card-link' href='https://vk.com/dr_arsen_rasulov' target='blanc'>
-                    <img 
-                      className='node__card-iconVk' 
-                      src={vk}
-                      alt='иконка инстаграм'
-                      title='посмотреть профиль в ВКонтакте'
-                    />
-                  </a>
-                </div>
-                {/* <video className="note__video" src={ramain} controls /> */}
+              <div className='note__card-contacts'>
+                <a className='note__card-link' href='https://www.instagram.com/dr_arsen_rasulov?igsh=MTl3MDFpOHJuMGV0eg==' target='blanc'>
+                  <img
+                    className='node__card-iconInst'
+                    src={inst}
+                    alt='иконка инстаграм'
+                    title='посмотреть профиль в Instagram'
+                  />
+                </a>
+                <a className='note__card-link' href='https://vk.com/dr_arsen_rasulov' target='blanc'>
+                  <img
+                    className='node__card-iconVk'
+                    src={vk}
+                    alt='иконка инстаграм'
+                    title='посмотреть профиль в ВКонтакте'
+                  />
+                </a>
+              </div>
+              {width > 646 ?
+                <button className='note__button' onClick={handleClick}>Посмотреть видео о враче</button> :
+                <video className="note__video" src={ramain} controls />
+              }
             </div>
           </div>
           <div className='note__card note__card_down'>
@@ -70,7 +88,10 @@ function Note() {
                 врач-радиотерапевт, заведующий радиотерапевтическим отделением ЧУЗ «ЦКБ «РЖД-Медицина»,
                 доцент кафедры онкологии и лучевой терапии МГМСУ им. А.И. Евдокимова
               </p>
-              {/* <video className="note__video" src={rdvideo} controls /> */}
+              {width > 646 ?
+                <button className='note__button' onClick={handleClick}>Посмотреть видео о враче</button> :
+                <video className="note__video" src={rdvideo} controls />
+              }
             </div>
           </div>
         </div>

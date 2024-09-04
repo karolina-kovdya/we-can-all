@@ -12,15 +12,19 @@ import Tab6 from '../Tab6/Tab6';
 import Tab7 from '../Tab7/Tab7';
 import Tab8 from '../Tab8/Tab8';
 import Footer from '../Footer/Footer';
+import VideoPopup from '../VideoPopup/VideoPopup';
 import { useEffect, useState } from 'react';
 
 function App() {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [video, setVideo] = useState({});
 
   useEffect(() => {
     const closePopupWithEsc = (e) => {
       if (e.key === "Escape") {
         closeBurgerMenu();
+        closePopup();
       }
     };
     window.addEventListener("keydown", closePopupWithEsc);
@@ -40,8 +44,17 @@ function App() {
     setIsBurgerOpen(!isBurgerOpen)
   }
 
+  function handlePopupOpen(video) {
+    setIsPopupOpen(!isPopupOpen);
+    setVideo(video)
+  }
+
   function closeBurgerMenu () {
     setIsBurgerOpen(false)
+  }
+
+  function closePopup() {
+    setIsPopupOpen(false);
   }
 
   return (
@@ -53,7 +66,7 @@ function App() {
       <Routes >
         <Route 
           path='/'
-          element={<Main />}
+          element={<Main onOpen={handlePopupOpen}/>}
         />
         <Route 
           path='/tab1'
@@ -80,6 +93,11 @@ function App() {
           element={<Tab8 />}
         />
       </Routes>
+      <VideoPopup 
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+        video={video}
+      />
       <Footer />
     </div>
   );

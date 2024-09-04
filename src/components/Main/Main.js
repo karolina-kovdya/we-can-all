@@ -1,9 +1,9 @@
 import Note from '../Note/Note';
 
-function Main () {
+function Main (props) {
     return (
         <main className='main'>
-          <Note />
+          <Note onOpen={props.onOpen}/>
         </main>
     )
 }
